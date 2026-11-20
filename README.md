@@ -1,3 +1,13 @@
+<p align="center"><img src="docs/assets/banner.png" alt="OnPage SEO: a free SEO skill for Claude, by OnPage Agent" width="100%"></p>
+
+<p align="center">
+  <a href="https://github.com/OnPage-Agent/onpage-seo/actions/workflows/tests.yml"><img src="https://github.com/OnPage-Agent/onpage-seo/actions/workflows/tests.yml/badge.svg" alt="tests"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2A5BEA" alt="MIT license"></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-2A5BEA" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/dependencies-none-2A5BEA" alt="No dependencies">
+  <img src="https://img.shields.io/badge/Claude-skill-2A5BEA" alt="Claude skill">
+</p>
+
 # OnPage SEO: a free SEO skill for Claude
 
 Audit any website's on-page SEO from one URL, then have Claude **fix it in your code**:
@@ -26,8 +36,20 @@ Free and open source (MIT). No API keys, no accounts, no installs beyond Python 
 | Security | HTTP not redirecting to HTTPS, missing security headers |
 
 Checks that are editorial conventions rather than search engine requirements are labelled
-"best practice", so you know what actually matters. See a real report:
-[examples/onpageagent.com.md](examples/onpageagent.com.md).
+"best practice", so you know what actually matters.
+
+## See it
+
+A real run on [socialdonut.co](https://socialdonut.co) (50 pages):
+
+<p align="center"><img src="docs/assets/terminal.png" alt="audit.py running on socialdonut.co: 50 pages crawled, score 87/100, findings ranked by impact" width="88%"></p>
+
+Every finding comes with where it is, the evidence, the fix and the Google documentation behind it:
+
+<p align="center"><img src="docs/assets/report.png" alt="The Markdown report for socialdonut.co rendered on GitHub" width="88%"></p>
+
+Full reports: [socialdonut.co](examples/socialdonut.co.md) · [onpageagent.com](examples/onpageagent.com.md).
+Claude then reads the report, double-checks the top findings and fixes them in your code.
 
 ## Install
 

@@ -1,0 +1,11 @@
+name: Idea or new check
+description: Suggest a check, a framework or platform guide, or an improvement.
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes: { label: What should it do, and why does it matter for search? }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Source, description: "Google or Bing documentation that backs it up, if any." }

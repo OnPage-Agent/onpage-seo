@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Source for docs/assets/terminal.png: a real run of audit.py (output trimmed, nothing invented). Built by build_previews.py. -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+ html,body{width:1200px;margin:0;background:#0B1020}
+ .term{margin:28px;background:#121A2E;border:1px solid #24304D;border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+ .bar{display:flex;gap:8px;align-items:center;padding:13px 16px;border-bottom:1px solid #24304D}
+ .bar i{width:12px;height:12px;border-radius:50%} .bar span{margin-left:10px;font:500 13px "JetBrains Mono",monospace;color:#9AA6C2}
+ pre{margin:0;padding:20px 24px 26px;font:14.5px/1.62 "JetBrains Mono",monospace;color:#E8ECF6;white-space:pre-wrap;word-break:break-word}
+ .p{color:#6E93FF} .m{color:#7F8AA8} .h1{color:#fff;font-weight:600} .h2{color:#F2B54B;font-weight:600} .b{color:#3FCB8A;font-weight:600}
+</style></head><body><div class="term"><div class="bar"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i><span>terminal</span></div><pre><span class="p">$</span> python3 scripts/audit.py https://socialdonut.co
+<span class="m">Auditing https://socialdonut.co (up to 50 pages)…</span>
+<span class="m">  crawled 8 pages</span>
+<span class="m">  crawled 16 pages</span>
+<span class="m">  crawled 24 pages</span>
+<span class="m">  crawled 32 pages</span>
+<span class="m">  crawled 40 pages</span>
+<span class="m">  crawled 48 pages</span>
+<span class="m">  crawled 50 pages</span>
+<span class="m">Checking robots.txt, llms.txt, HTTPS and host redirects…</span>
+
+<span class="h1"># SEO audit: https://socialdonut.co</span>
+
+<span class="b">Score **87/100** · 50 pages crawled (50 returned 200) · 2026-11-20</span>
+
+_Stopped at 50 pages (`--max-pages`). Larger sites are sampled._
+
+<span class="h2">## 1. Images without alt text (medium)</span>
+
+Screen readers and image search rely on alt text. 
+
+- **Where:** `/`, `/brand-strategy-framework/`, `/branding-audit-checklist/` and 43 more
+- **Evidence:** 46 pages have images without alt text
+- **Fix:** Describe each meaningful image in its `alt` attribute.
+- **Source:** https://developers.google.com/search/docs/appearance/google-images
+
+<span class="h2">## 2. Heading levels skipped (low)</span></pre></div></body></html>

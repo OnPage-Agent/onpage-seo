@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- Source for docs/assets/social-preview.png (upload in the repo's Settings → Social preview). -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --blue: #2A5BEA; --blue-2: #6E93FF; --ink: #0B1020; --panel: #121A2E; --line: #24304D; --text: #E8ECF6; --muted: #9AA6C2; --green: #3FCB8A; --amber: #F2B54B; --red: #F07A84; }
+  * { box-sizing: border-box; margin: 0 }
+  html, body { width: 1280px; height: var(--h); overflow: hidden }
+  body { background: radial-gradient(1200px 520px at 85% -10%, rgba(42,91,234,.42), transparent 60%), radial-gradient(800px 400px at -10% 120%, rgba(110,147,255,.18), transparent 60%), var(--ink);
+         color: var(--text); font-family: Figtree, system-ui, sans-serif; display: grid; grid-template-columns: 1fr 560px; gap: 48px; align-items: center; padding: 0 64px; }
+  body::before { content: ""; position: fixed; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 40px 40px; mask-image: linear-gradient(90deg, #000 0%, transparent 75%); pointer-events: none }
+  .left { display: flex; flex-direction: column; gap: 22px; position: relative }
+  .logo { height: 30px; width: auto; align-self: flex-start }
+  .kicker { display: inline-flex; align-self: flex-start; gap: 8px; align-items: center; padding: 6px 12px; border-radius: 999px; background: rgba(42,91,234,.18); border: 1px solid rgba(110,147,255,.35); color: #C9D6FF; font-size: 15px; font-weight: 600; letter-spacing: .02em }
+  h1 { font-size: 64px; line-height: 1.02; font-weight: 800; letter-spacing: -0.03em }
+  h1 span { color: var(--blue-2) }
+  p.sub { font-size: 21px; line-height: 1.45; color: var(--muted); max-width: 30ch }
+  p.sub b { color: var(--text); font-weight: 600 }
+  .chips { display: flex; gap: 10px; flex-wrap: wrap }
+  .chip { font: 500 14px/1 "JetBrains Mono", monospace; color: #C9D6FF; padding: 8px 11px; border-radius: 8px; background: rgba(255,255,255,.05); border: 1px solid var(--line) }
+  .term { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.03) inset; overflow: hidden; position: relative }
+  .bar { display: flex; gap: 8px; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line) }
+  .dot { width: 12px; height: 12px; border-radius: 50% } .r { background: #FF5F57 } .y { background: #FEBC2E } .g { background: #28C840 }
+  .bar span { margin-left: 10px; font: 500 13px "JetBrains Mono", monospace; color: var(--muted) }
+  pre { font: 15px/1.6 "JetBrains Mono", monospace; padding: 20px 22px 24px; white-space: pre-wrap; color: var(--text) }
+  .p { color: var(--blue-2) } .m { color: var(--muted) } .ok { color: var(--green) } .w { color: var(--amber) } .h { color: var(--red) } .b { font-weight: 600 }
+</style></head>
+<body style="--h: 640px">
+  <div class="left">
+    <img class="logo" src="logo-white.svg" alt="OnPage Agent">
+    <h1>Free SEO skill<br>for <span>Claude</span></h1>
+    <p class="sub">Audit any site from one URL, then <b>fix it in your code</b>. Next.js, Astro, Lovable, WordPress and more.</p>
+    <div class="chips"><span class="chip">31 checks</span><span class="chip">no API keys</span><span class="chip">MIT</span></div>
+    <div class="chip" style="align-self:flex-start;color:var(--muted)">github.com/OnPage-Agent/onpage-seo</div>
+  </div>
+  <div class="term">
+    <div class="bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i><span>claude</span></div>
+<pre><span class="p">&gt;</span> /onpage-seo https://socialdonut.co
+
+<span class="m">Crawled 50 pages · 31 checks</span>
+Score <span class="b">87/100</span>
+
+<span class="w">●</span> Images without alt text   <span class="m">46 pages</span>
+<span class="w">●</span> Heading levels skipped    <span class="m">19 pages</span>
+<span class="m">●</span> Titles over 60 characters <span class="m"> 1 page</span>
+<span class="ok">✓</span> HTTPS · sitemap · robots.txt · canonicals</pre>
+  </div>
+</body></html>

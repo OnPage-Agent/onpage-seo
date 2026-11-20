@@ -1,0 +1,16 @@
+name: Wrong or missing finding
+description: The audit reported something that isn't a problem, or missed one that is.
+labels: [accuracy]
+body:
+  - type: input
+    id: url
+    attributes: { label: Page URL, description: "A public page that shows the problem." }
+    validations: { required: true }
+  - type: input
+    id: check
+    attributes: { label: Which check, placeholder: "e.g. Content only appears after JavaScript runs" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened and what you expected }
+    validations: { required: true }
