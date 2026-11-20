@@ -9,3 +9,4 @@ shot banner 1280,420
 shot social-preview 1280,640
 shot terminal 1200,760
 shot report 1200,1230
+shot avatar 512,512
