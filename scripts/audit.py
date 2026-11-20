@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""On-page SEO audit of a live website. Standard library only (Python 3.9+).
+"""On-page SEO audit of a live website. Standard library only (Python 3.10+).
 
     python3 audit.py https://example.com                 # Markdown report on stdout
     python3 audit.py https://example.com --json out.json # also write every finding as JSON

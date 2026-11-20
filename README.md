@@ -5,7 +5,7 @@ Next.js, Astro, React/Vite (Lovable, Bolt, v0), Nuxt, SvelteKit or plain HTML. O
 Webflow, Wix, Shopify or Squarespace it gives you the exact clicks instead. It also sets up Google
 Search Console, Google Analytics 4 and Bing, and turns your keywords into article ideas and briefs.
 
-Free and open source (MIT). No API keys, no accounts, no installs beyond Python 3.9+.
+Free and open source (MIT). No API keys, no accounts, no installs beyond Python 3.10+.
 
 ```
 /onpage-seo https://example.com

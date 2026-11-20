@@ -33,7 +33,7 @@ Ground rules for every job:
 ## 1. Audit a live site
 
 1. Tell the user in one line that the audit has started and usually takes under a minute.
-2. Run the script that ships with this skill (Python 3.9+, no installs):
+2. Run the script that ships with this skill (Python 3.10+, no installs):
    ```bash
    python3 "<skill-dir>/scripts/audit.py" <url> --json /tmp/onpage-audit.json
    ```
